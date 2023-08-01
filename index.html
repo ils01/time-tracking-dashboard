@@ -27,13 +27,21 @@
     </head>
     <body>
         <main>
-            <h1>Time Tracking Dashboard</h1>
+            <h1 class="visually-hidden">Time Tracking Dashboard</h1>
             <section class="dashboard">
                 <div class="dashboard__info">
                     <div class="dashboard__user user">
-                        <div class="user__avatar"></div>
-                        <div class="user__title">
-                            <h2>Report for Jeremy Robson</h2>
+                        <div class="user__avatar">
+                            <img
+                                src="./images/image-jeremy.png"
+                                alt="your avatar"
+                            />
+                        </div>
+                        <div>
+                            <h2 class="user__title">
+                                <span>Report for</span>
+                                <span class="user__name">Jeremy Robson</span>
+                            </h2>
                         </div>
                     </div>
                     <div class="dashboard__frequency frequency">
@@ -46,24 +54,26 @@
                 </div>
                 <div class="dashboard__cards">
                     <div class="dashboard__card card">
-                        <div class="card__panel">
+                        <div class="card__panel panel--work">
                             <div class="panel__img">
                                 <img src="./images/icon-work.svg" alt="" />
                             </div>
                         </div>
-                        <div class="card__info">
-                            <div class="card__title">Work</div>
-                            <div class="card__options">
-                                <img
-                                    src="./images/icon-ellipsis.svg"
-                                    alt="card options"
-                                />
+                        <div class="card__body">
+                            <div class="card__info">
+                                <div class="card__title">Work</div>
+                                <div class="card__options">
+                                    <img
+                                        src="./images/icon-ellipsis.svg"
+                                        alt="card options"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div class="card__value">
-                            <div class="card__time--current">32hrs</div>
-                            <div class="card__time--previous">
-                                Last Week - 36hrs
+                            <div class="card__value">
+                                <div class="card__time--current">32hrs</div>
+                                <div class="card__time--previous">
+                                    Last Week - 36hrs
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -71,13 +81,15 @@
             </section>
         </main>
 
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-        </div>
+        <footer>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">Your Name Here</a>.
+            </div>
+        </footer>
     </body>
 </html>

@@ -83,3 +83,134 @@ h6 {
 
     --fs-base: 1.125rem;
 }
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--clr-neutral-vdarkblue);
+
+    font-family: var(--ff-main);
+    color: #fff;
+    font-weight: var(--fw-regular);
+
+    padding-inline: 1.15rem;
+    padding-top: 4rem;
+}
+
+.dashboard {
+    display: grid;
+}
+
+.dashboard__user {
+    background-color: var(--clr-primary-blue);
+
+    padding: 1.5rem;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    position: relative;
+    z-index: 1;
+}
+
+.user__avatar {
+    max-width: 65px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+.user__title {
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-paleblue);
+    font-size: 0.9375rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user__name {
+    color: #fff;
+    font-weight: var(--fw-light);
+    font-size: 1.5rem;
+}
+
+.dashboard__frequency {
+    background-color: var(--clr-neutral-darkblue);
+
+    border-radius: 0 0 15px 15px;
+    padding-inline: 1.5rem;
+    padding-bottom: 1.15rem;
+    padding-top: 2rem;
+    position: relative;
+    top: -0.75rem;
+}
+
+.frequency__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    color: var(--clr-neutral-desaturatedblue);
+    justify-content: space-between;
+}
+
+.dashboard__cards {
+    position: relative;
+    top: -1.75rem;
+}
+
+.card__panel {
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    top: 2.75rem;
+    overflow: hidden;
+
+    background-color: var(--clr-primary-orange);
+}
+.panel__img {
+    margin-left: auto;
+    margin-right: 1.15rem;
+    max-width: 5rem;
+
+    position: relative;
+    bottom: 1rem;
+}
+.card__body {
+    position: relative;
+    background-color: var(--clr-neutral-darkblue);
+    color: #fff;
+    padding-inline: 1.15rem;
+    padding-block: 1.5rem;
+    border-radius: 15px;
+}
+.card__info,
+.card__value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__title {
+    font-weight: var(--fw-medium);
+}
+.card__time--current {
+    font-size: 2rem;
+    font-weight: var(--fw-light);
+}
+.card__time--previous {
+    font-size: 0.9375rem;
+    color: var(--clr-neutral-paleblue);
+}
