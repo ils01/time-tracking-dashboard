@@ -171,6 +171,12 @@ body {
 .dashboard__cards {
     position: relative;
     top: -1.75rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}
+.dashboard__card:not(:first-child) {
+    margin-top: -1.5rem;
 }
 
 .card__panel {
@@ -178,16 +184,37 @@ body {
     position: relative;
     top: 2.75rem;
     overflow: hidden;
-
+    height: 80px;
+}
+.panel--work {
     background-color: var(--clr-primary-orange);
 }
+.panel--play {
+    background-color: var(--clr-primary-lightblue);
+}
+.panel--study{
+    background-color: var(--clr-primary-red);
+}
+.panel--exercise {
+    background-color: var(--clr-primary-green);
+}
+.panel--social {
+    background-color: var(--clr-primary-purple);
+}
+.panel--selfcare {
+    background-color: var(--clr-primary-yellow);
+}
+
 .panel__img {
     margin-left: auto;
-    margin-right: 1.15rem;
-    max-width: 5rem;
+    margin-right: 5%;
+    max-width: 80%;
 
     position: relative;
-    bottom: 1rem;
+    bottom: 10%;
+}
+.panel__img > img {
+    margin-left: auto;
 }
 .card__body {
     position: relative;
@@ -213,4 +240,9 @@ body {
 .card__time--previous {
     font-size: 0.9375rem;
     color: var(--clr-neutral-paleblue);
+}
+
+footer {
+    font-size: 0.75rem;
+    text-align: center;
 }
